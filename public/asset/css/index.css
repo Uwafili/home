@@ -1,0 +1,205 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+#container{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: fit-content;
+}
+.min_tex{
+    font-weight: 600;
+    background-image: url('/image/three.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+    width: auto;
+    
+}
+.lft_sid{
+    width: 100%;
+    float: right;
+
+
+}
+.lft_sid h1{
+    font-size: 3em;
+    font-weight: 600;
+    color: #70767A;
+    font-family: "Josefin Sans", sans-serif;
+    padding:30px;
+    width: 70%;
+
+}
+.lft_sid p{
+    font-family: Light 300;
+    font-size:19px;
+    float: left;
+    padding: 10px;
+    color: #70767A;
+    width: 60%;
+
+}
+#job_done{
+    background-color: whitesmoke;
+    width: auto;
+    height: 50vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.child{
+    font-size: 2em;
+    padding: 20px;
+    color: #70767A;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+}
+.child p{
+    font-size: 16px;
+    padding: 20px;
+    color: #70767A;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+}
+#list{
+    background-color: white;
+    width: auto;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+#why_chos{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #70767A;
+    color: white;   
+    width: auto;
+    height: 80vh;
+
+}
+.properties h1{
+    font-size: 2em;
+    font-weight: 600;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 10px;
+}
+
+.properties p{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Josefin Sans", sans-serif;
+    width: 50%;
+}
+.properties img{
+    width: 30vw;
+}
+.opt{
+    width: 50%;
+    display: flex;
+}
+.fab{
+    font-size:20px;
+    padding: 10px;
+}
+.fab:hover{
+    color: #70767A;
+    background-color: white;
+    border-radius: 50%;
+    transition-duration: 2s;
+}
+@media (max-width: 767.98px){
+    body{
+        overflow-x: hidden;
+    }
+    #container{
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: fit-content;
+    }
+    .min_tex{
+        background-image: url('/image/open.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-weight: 60vh;
+        height: 50vh;
+        width: auto;
+        display: block;
+
+    }
+    .lft_sid{
+        width: 100%;
+        float: right;
+     
+    }
+    .lft_sid h1{
+        font-size: 25px;
+        font-weight: 600;
+        color: #70767A;
+        width: auto;
+        text-align: center;
+    }
+    .lft_sid p{
+        font-family: Light 300;
+        font-size:14px;
+        padding: 10px;
+        color: #70767A;
+        width: auto;
+        text-align: center;
+    }
+    #job_done{
+        background-color: whitesmoke;
+        width: auto;
+        height: fit-content;
+        display: block;
+        text-align: center;
+        justify-content: center;
+    }
+    #list{
+        background-color: white;
+        width: auto;
+        height: fit-content;
+        padding: 0;
+        margin: 0;
+    }
+    #why_chos{
+        display: block;
+        padding: 20px;
+        background-color: #70767A;
+        color: white;   
+        width: auto;
+        height: fit-content;
+    }
+    .properties h1{
+        font-size: 25px;
+        font-weight: 600;
+        font-family: "Josefin Sans", sans-serif;
+        padding: 10px;
+        text-align: center;
+    }
+    .properties p{
+        font-size: 14px;
+        font-weight: 300;
+        font-family: "Josefin Sans", sans-serif;
+        width: 100%;
+        text-align: center;
+    }
+    .properties img{
+        width: 70vw;
+        padding-left: 20%;
+    }
+    .fab{
+        font-size:15px;
+        justify-items: center;
+    }
+}
