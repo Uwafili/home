@@ -23,7 +23,7 @@
                     @auth
                         
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="{{ route('home') }}">Home</a>
+                        <a class="nav-link text-white" href="{{ route('posts.index') }}">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="{{ route('about') }}">About</a>
@@ -51,7 +51,7 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                             <p style="color:#70767A; font-size: 18px; text-align: center;">{{ auth()->user()->name }}</p>
-                            <li><a class="dropdown-item" href="">Dashboard</a></li>
+                            <li><a class="dropdown-item" href="{{route('dashboard')}}">Dashboard</a></li>
                             <li>
                                 <form action="{{ route('logout') }}" method="POST" class="d-inline">
                                     @csrf
@@ -68,10 +68,51 @@
     
     @yield('content')
     
-    <footer class="text-center mt-4 py-3" style="background-color: #70767A; color: white;">
-        <p>&copy; {{ date('Y') }} Woodstock Properties. All rights reserved.</p>
-    </footer>
+    <footer class="text-center mt-4 py-4" style="background-color: #70767A; color: white;">
+        <div class="container"  >
+            <div class="row" >
+                <div class="col-md-4 mb-2">
+                    <h5>Follow Us</h5>
+                    <a  href="https://www.facebook.com" target="_blank" style="text-decoration:none;" class="text-white me-3">
+                        <i class="fab fa-facebook fa-lg"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" style="text-decoration:none;" class="text-white me-3"> 
+                        <i class="fab fa-twitter fa-lg"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" style="text-decoration:none;" class="text-white me-3">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" style="text-decoration:none;" class="text-white me-3">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank" style="text-decoration:none;" class="text-white me-3">
+                        <i class="fab fa-youtube fa-lg"></i>
+                    </a>
+                </div>
     
+                <!-- Useful Links -->
+                <div class="col-md-4 mb-3">
+                    <h5>Useful Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="{{ route('posts.index') }}" class="text-white">Home</a></li>
+                        <li><a href="{{ route('about') }}" class="text-white">About Us</a></li>
+                        <li><a href="{{ route('pricing') }}" class="text-white">Pricing</a></li>
+                        <li><a href="{{ route('contact') }}" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Us -->
+                <div class="col-md-4 mb-3">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Woodstock</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@woodstockproperties.com</p>
+                </div>
+            </div>
+            <hr style="border-color: white;">
+            <p>&copy; {{ date('Y') }} Woodstock Properties. All rights reserved.</p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

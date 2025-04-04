@@ -11,7 +11,7 @@
                     <h4>Basic Plan</h4>
                 </div>
                 <div class="card-body text-center">
-                    <h2 class="card-title">$49</h2>
+                    <h2 class="card-title">&#8358;49</h2>
                     <p class="card-text">Perfect for individuals starting out.</p>
                     <ul class="list-unstyled">
                         <li><i class="fas fa-check-circle text-success"></i> Access to basic features</li>
@@ -29,7 +29,7 @@
                     <h4>Standard Plan</h4>
                 </div>
                 <div class="card-body text-center">
-                    <h2 class="card-title">$99</h2>
+                    <h2 class="card-title">&#8358;99</h2>
                     <p class="card-text">Ideal for small businesses.</p>
                     <ul class="list-unstyled">
                         <li><i class="fas fa-check-circle text-success"></i> Access to all features</li>
@@ -47,7 +47,7 @@
                     <h4>Premium Plan</h4>
                 </div>
                 <div class="card-body text-center">
-                    <h2 class="card-title">$199</h2>
+                    <h2 class="card-title">&#8358;199</h2>
                     <p class="card-text">Best for enterprises and large teams.</p>
                     <ul class="list-unstyled">
                         <li><i class="fas fa-check-circle text-success"></i> Unlimited features</li>

@@ -15,7 +15,7 @@ body{
 }
 .min_tex{
     font-weight: 600;
-    background-image: url('/image/three.jpg');
+    background-image: url('/image/open.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -32,7 +32,8 @@ body{
 .lft_sid h1{
     font-size: 3em;
     font-weight: 600;
-    color: #70767A;
+    /* color: #70767A; */
+    color:white;
     font-family: "Josefin Sans", sans-serif;
     padding:30px;
     width: 70%;
@@ -43,7 +44,8 @@ body{
     font-size:19px;
     float: left;
     padding: 10px;
-    color: #70767A;
+    /* color: #70767A; */
+    color:white;
     width: 60%;
 
 }

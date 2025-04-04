@@ -189,31 +189,24 @@
     <h2 class="text-center mb-4">Our Products</h2>
     <div class="row">
         <!-- Product 1 -->
+        @foreach($posts as $post)
+
+    
         <div class="col-md-4 mb-4">
             <div class="card shadow-sm">
                 <img src="{{ asset('image/chair.jpg') }}" class="card-img-top" alt="Product 1" style="height: 200px; object-fit: cover;">
                 <div class="card-body">
-                    <h5 class="card-title">Luxury Wooden Table</h5>
-                    <p class="card-text">A beautifully crafted wooden table, perfect for your dining room.</p>
-                    <p class="text-muted"><i class="fas fa-map-marker-alt text-danger"></i> Lagos, Nigeria</p>
-                    <p class="text-muted">Posted by: <strong>John Doe</strong></p>
+                    <h5 class="card-title">{{$post->title}}</h5>
+                    <p class="card-text">{{Str::words($post->body, 15)}}</p>
+                    <p class="text-muted"><i class="fas fa-map-marker-alt text-danger"></i> {{$post->location}}</p>
+                    <p class="text-muted">Posted by: <strong>{{Auth::user()->name;}}</strong></p>
+                    <span>posted {{$post->created_at->diffForHumans()}}</span>
                     <a href="#" class="btn btn-primary">View Details</a>
                 </div>
             </div>
         </div>
-        <!-- Product 2 -->
-        <div class="col-md-4 mb-4">
-            <div class="card shadow-sm">
-                <img src="{{ asset('image/bedroom.jpg') }}" class="card-img-top" alt="Product 2" style="height: 200px; object-fit: cover;">
-                <div class="card-body">
-                    <h5 class="card-title">Modern Wooden Chair</h5>
-                    <p class="card-text">A stylish and comfortable wooden chair for your living space.</p>
-                    <p class="text-muted"><i class="fas fa-map-marker-alt text-danger"></i> Abuja, Nigeria</p>
-                    <p class="text-muted">Posted by: <strong>Jane Smith</strong></p>
-                    <a href="#" class="btn btn-primary">View Details</a>
-                </div>
-            </div>
-        </div>
+        
+        @endforeach
         <!-- Product 3 -->
         <div class="col-md-4 mb-4">
             <div class="card shadow-sm">

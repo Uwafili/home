@@ -22,7 +22,7 @@ class AuthController extends Controller
 
         Auth::login($user);
 
-        return redirect()->route('home');
+        return redirect()->route('posts.index');
     }
 
     public function login(Request $request)
@@ -33,7 +33,7 @@ class AuthController extends Controller
         ]);
 
         if (Auth::attempt($fields, $request->remember)) {
-            return redirect()->intended(route('home'));
+            return redirect()->intended(route('posts.index'));
         } else {
             return back()->withErrors([
                 'failed' => 'The provided credentials do not match our records.',
